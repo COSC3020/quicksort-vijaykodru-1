@@ -14,8 +14,7 @@ Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
 
-The time complexity for the implementation is $\Theta(n^2)$. This is because the code iterates over n elements and at in each iteration it checks that pivot and compares it to n number of elements which leads us to the total time complexity of $\Theta(n^2)$. This type worst case happens if the given array is sorted in reverse. In this type of situation the pivot is set to be the first element in every iteration.
-
+The time complexity for the implementation is $\Theta(n^2)$. This is because the algorithm iterates over n elements, and in each iteration, it compares the pivot element with the other elements in the array. As a result, the algorithm performs n comparisons for each element, leading to a total time complexity of $\Theta(n^2)$
 
 References: 
 
