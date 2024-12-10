@@ -1,12 +1,12 @@
 function quicksort(array) {
-    //base case if the array has less than or equal to 1 element in them
+    //If the array has less than or equal to 1 element
     if (array.length <= 1) {
         return array;
     }
 
-    //This is a way to do recursion without actually doing it
-    const stack = []
-    stack.push(0, array.length-1);
+    // This is a way to do recursion without actually doing it
+    const stack = [];
+    stack.push(0, array.length - 1);
 
     // Process the stack until all subarrays are sorted
     while (stack.length > 0) {
@@ -34,12 +34,19 @@ function quicksort(array) {
 }
 
 function partition(array, low, high) {
+    // Choose a random pivot to avoid worst-case performance on already sorted/duplicate arrays
+    const pivotIndex = Math.floor(Math.random() * (high - low + 1)) + low;
+    const pivotValue = array[pivotIndex];
+    
+    // Swap the pivot with the first element
+    [array[low], array[pivotIndex]] = [array[pivotIndex], array[low]];
+
     let pivot = low; // Start pivot at the low index
 
-    // Iterate through the array from low+1 to high
+    // Iterate through the array from low + 1 to high
     for (let i = low + 1; i <= high; i++) {
         // If the current element is smaller than the pivot element
-        if (array[i] < array[pivot]) {
+        if (array[i] < pivotValue) {
             pivot++; // Move the pivot position forward
             // Swap the current element with the element at the pivot position
             [array[pivot], array[i]] = [array[i], array[pivot]];
