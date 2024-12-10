@@ -25,3 +25,7 @@ The above website gave me good understanding how to implement a recursive versio
 https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/visualize/
 
 Visualize how the quicksort works
+
+quicksort-vijaykodru I had to look at my old repository because my test was failing at first. However I wanted to try out how randomly picking the pivot can help and it worked. 
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice
